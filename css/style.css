@@ -1,6 +1,5 @@
 /* COMMON */
 .small_wrapper {
-    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -96,7 +95,6 @@ nav .burger_menu {
 }
 
 /* MAIN */
-
 #portfolio img {
     border-radius: 10px;
     margin-bottom: 30px;
@@ -115,4 +113,29 @@ nav .burger_menu {
 
 #about .btn a {
     color: white;
+}
+
+/* MEDIA QUERY */
+/* phone - extra small screen */
+@media screen and (max-width: 768px) {
+
+    .small_wrapper {
+        max-width: 300px;
+    }
+}
+
+/* tablet - small screen */
+@media screen and (min-width: 769px) and (max-width: 991px) {
+
+    .small_wrapper {
+        max-width: 678px;
+    }
+}
+
+/* desktop - large screen */
+@media screen and (min-width: 992px) {
+
+    .small_wrapper {
+        max-width: 992px;
+    }
 }
