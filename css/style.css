@@ -1,9 +1,26 @@
+/* COMMON */
 img {
     width: 100%;
 }
 
-/* HEADER */
+.text_center {
+    text-align: center;
+}
 
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title h2 {
+    font-size: 40px;
+}
+
+.title .star {
+    font-size: 25px;
+}
+
+/* HEADER */
 header {
     color: white;
 }
@@ -52,15 +69,42 @@ nav .burger_menu {
 }
 
 .jumbotron .intro h1 {
-    font-size: 40px;
+    font-size: 50px;
 }
 
-.jumbotron .intro .fa-star {
-    font-size: 20px;
+.jumbotron .intro .star::after {
+    content: "";
+    width: 100px;
+    height: 80px;
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
 }
 
 .jumbotron .intro .details {
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+/* MAIN */
+
+.portfolio img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.about {
+    background-color: #18bc9b;
+    color: white;
+    padding: 30px 0;
+}
+
+.about .btn {
+    margin: 0 auto;
+    background-color: #18bc9b;
+    border: 1px solid white;
+}
+
+.about .btn a {
+    color: white;
 }
