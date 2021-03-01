@@ -1,0 +1,66 @@
+img {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    color: white;
+}
+
+nav {
+    background-color: #2b3e50;
+    padding: 20px 0;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav .menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav .menu li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav .burger_menu a {
+    font-size: 25px;
+    color: gray;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+nav .menu,
+nav .burger_menu {
+    text-align: right;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #18bc9b;
+}
+
+.jumbotron .avatar {
+    width: 150px;
+    height: auto;
+}
+
+.jumbotron .intro h1 {
+    font-size: 40px;
+}
+
+.jumbotron .intro .fa-star {
+    font-size: 20px;
+}
+
+.jumbotron .intro .details {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
