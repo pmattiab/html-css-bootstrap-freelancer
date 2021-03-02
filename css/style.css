@@ -88,7 +88,8 @@ nav .menu li {
     margin-left: 15px;
 }
 
-nav .menu a {
+nav .menu a,
+.top_nav .logo {
     text-transform: uppercase;
 }
 
