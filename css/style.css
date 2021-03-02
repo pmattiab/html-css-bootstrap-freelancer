@@ -39,6 +39,11 @@
     margin-bottom: 15px;
 }
 
+#portfolio .star,
+#contact .star {
+    color: #2b3e50;
+}
+
 /* HEADER */
 /* top nav */
 .top_nav {
@@ -107,47 +112,57 @@ nav .burger_menu .fa-bars {
     font-size: 17px;
 }
 
-#about .btn .fa-download {
+#about .btn_download .fa-download {
     margin-right: 5px;
 }
 
-#about .btn {
+#about .btn_download {
     color: white;
     background-color: #18bc9b;
     border: 1px solid white;
     margin-top: 20px;
 }
 
-#about .btn:hover {
+#about .btn_download:hover {
     color: #18bc9b;
     background-color: white;
     border: 1px solid #18bc9b;
 }
 
 /* contact */
-#contact .btn {
+
+#contact form input,
+#contact form textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 20px;
+    padding-left: 0;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #2b3e50;
+    opacity: 0.8;
+}
+
+#contact .send_btn {
     color: white;
     background-color: #18bc9b;
     border: 1px solid white;
 }
 
-#contact .btn:hover {
+#contact .send_btn:hover {
     color: #18bc9b;
     background-color: white;
     border: 1px solid #18bc9b;
 }
 
 /* FOOTER */
-.top_footer {
-    background-color: #3a546d;
-    color: white;
-}
-
-.bottom_footer {
-    background-color: #2b3c4e;
-    color: white;
-}
-
 footer .menu li {
     height: 50px;
     width: 50px;
@@ -158,4 +173,14 @@ footer .menu li {
 footer .menu li a {
     line-height: 50px;
     font-size: 20px;
+}
+
+.top_footer {
+    background-color: #3a546d;
+    color: white;
+}
+
+.bottom_footer {
+    background-color: #2b3e50;
+    color: white;
 }
