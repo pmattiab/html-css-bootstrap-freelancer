@@ -163,24 +163,39 @@ nav .burger_menu .fa-bars {
 }
 
 /* FOOTER */
+footer {
+    color: white;
+}
+
 footer .menu li {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     border: 1px solid white;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 footer .menu li a {
-    line-height: 50px;
+    line-height: 55px;
     font-size: 20px;
+}
+
+.top_footer h3 {
+    font-weight: 500;
+}
+
+.top_footer p {
+    font-size: 20px;
+}
+
+.top_footer a {
+    color: #18bc9b;
 }
 
 .top_footer {
     background-color: #3a546d;
-    color: white;
 }
 
 .bottom_footer {
     background-color: #2b3e50;
-    color: white;
 }
