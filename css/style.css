@@ -96,21 +96,45 @@ nav .burger_menu .fa-bars {
 }
 
 /* MAIN */
+/* portfolio */
 #portfolio img {
     border-radius: 10px;
     margin-bottom: 30px;
+}
+
+/* about */
+#about p {
+    font-size: 17px;
+}
+
+#about .btn .fa-download {
+    margin-right: 5px;
 }
 
 #about .btn {
     color: white;
     background-color: #18bc9b;
     border: 1px solid white;
+    margin-top: 20px;
 }
 
+#about .btn:hover {
+    color: #18bc9b;
+    background-color: white;
+    border: 1px solid #18bc9b;
+}
+
+/* contact */
 #contact .btn {
     color: white;
     background-color: #18bc9b;
-    border: none;
+    border: 1px solid white;
+}
+
+#contact .btn:hover {
+    color: #18bc9b;
+    background-color: white;
+    border: 1px solid #18bc9b;
 }
 
 /* FOOTER */
