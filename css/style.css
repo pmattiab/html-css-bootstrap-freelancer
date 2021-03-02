@@ -39,6 +39,26 @@
     margin-bottom: 15px;
 }
 
+.section_title .star::before {
+    content:"";
+    border: 2px solid;
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.section_title .star::after {
+    content:"";
+    border: 2px solid;
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
 #portfolio .star,
 #contact .star {
     color: #2b3e50;
@@ -56,6 +76,7 @@
 .top_nav .logo {
     font-size: 20px;
     font-weight: 600;
+    padding-top: 2px;
 }
 
 /* menu */
