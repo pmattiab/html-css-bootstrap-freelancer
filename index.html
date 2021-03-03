@@ -17,14 +17,14 @@
     <header>
 
         <!-- inizio top nav -->
-        <div class="top_nav">
+        <div class="top_nav navbar-fixed-top">
             <div class="container">
                 <div class="row">
 
                     <!-- inizio logo -->
                     <div class="col-xs-6 col-sm-6 col-md-6">
                         <div class="logo">
-                            start bootstrap
+                            Start Bootstrap
                         </div>
                     </div>
                     <!-- fine logo -->
@@ -32,11 +32,11 @@
                     <!-- inizio menu -->
                     <div class="hidden-xs hidden-sm col-md-6">
                         <nav>
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">contact</a></li>
+                            <div>
+                                <ul class="menu">
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -66,7 +66,7 @@
             <div class="section_title">
                 <h1>start bootstrap</h1>
                 <div class="star"><i class="fas fa-star"></i></div>
-                <p class="details">graphic artist - web designer - illustrator</p>
+                <p class="details">Graphic Artist - Web Designer - Illustrator</p>
             </div>
         </div>
         <!-- fine banner -->
@@ -82,7 +82,7 @@
             <div class="container">
 
                 <div class="section_title">
-                    <h2 class>portfolio</h2>
+                    <h2 class>Portfolio</h2>
                     <div class="star"><i class="fas fa-star"></i></div>
                 </div>
 
@@ -123,7 +123,7 @@
                 <div class="container-fluid">
 
                     <div class="section_title text-center">
-                        <h2>about</h2>
+                        <h2>About</h2>
                         <div class="star"><i class="fas fa-star"></i></div>
                     </div>
 
@@ -154,29 +154,36 @@
                 <div class="container-fluid">
                     
                     <div class="section_title text-center">
-                        <h2>contact me</h2>
+                        <h2>Contact me</h2>
                         <div class="star"><i class="fas fa-star"></i></div>
                     </div>
 
                     <!-- inizio form -->
                     <form action="#">
 
+                        <!-- la classe sr-only nel label serve per far scomparire il
+                        label dallo schermo, ma di fatto è leggibile dagli screen reader -->
                         <div class="form-group">
+                            <label class="sr-only" for="">Name</label>
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
 
                         <div class="form-group">
+                            <label class="sr-only" for="">Email</label>
                             <input type="email" class="form-control" placeholder="Email Address">
                         </div>
 
                         <div class="form-group">
+                            <label class="sr-only" for="">Phone</label>
                             <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
 
                         <div class="form-group">
+                            <label class="sr-only" for="">Message</label>
                             <textarea class="form-control" rows="7" placeholder="Message"></textarea>
                         </div>
 
+                        <label class="sr-only" for="">Send</label>
                         <button type="submit" class="btn btn-lg send_btn">Send</button>
 
                     </form>
@@ -199,14 +206,14 @@
                 <div class="row">
 
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h3>LOCATION</h3>
-                        <p>2215 John Daniel Drive Clark, MO<br>54243</p>
+                        <h3>Location</h3>
+                        <address>2215 John Daniel Drive Clark, MO<br>54243</address>
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h3>AROUND THE WEB</h3>
-                        <div class="social menu">
-                            <ul>
+                        <h3>Around the web</h3>
+                        <div>
+                            <ul class="social menu">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -216,8 +223,10 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h3>ABOUT FREELANCER</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="">Start Bootstrap</a>.</p>
+                        <div class="description">
+                            <h3>About Freelancer</h3>
+                            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="">Start Bootstrap</a>.</p>
+                        </div>
                     </div>
 
                 </div>

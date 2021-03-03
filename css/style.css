@@ -1,4 +1,8 @@
 /* COMMON */
+html {
+    scroll-behavior: smooth;
+  }
+
 .menu li {
     list-style-type: none;
     display: inline-block;
@@ -6,6 +10,10 @@
 
 .menu li a {
     color: white;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
 }
 
@@ -24,9 +32,12 @@
     margin: auto;
 }
 
+.top_nav,
+nav .menu a,
 .section_title h1,
 .section_title h2,
-.section_title .details {
+.section_title .details,
+footer h3 {
     text-transform: uppercase;
 }
 
@@ -44,7 +55,7 @@
     border: 2px solid;
     width: 150px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: super;
     margin-right: 15px;
     border-radius: 10px;
 }
@@ -54,7 +65,7 @@
     border: 2px solid;
     width: 150px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: super;
     margin-left: 15px;
     border-radius: 10px;
 }
@@ -88,11 +99,6 @@ nav .menu li {
     margin-left: 15px;
 }
 
-nav .menu a,
-.top_nav .logo {
-    text-transform: uppercase;
-}
-
 /* burger menu */
 nav .menu,
 nav .burger_menu {
@@ -108,8 +114,13 @@ nav .burger_menu .fa-bars {
 }
 
 /* banner */
+.banner {
+    padding-top: 80px;
+}
+
 .banner .avatar {
-    max-width: 200px;
+    max-width: 15%;
+    min-width: 150px;
     height: auto;
 }
 
@@ -152,7 +163,6 @@ nav .burger_menu .fa-bars {
 }
 
 /* contact */
-
 #contact form input,
 #contact form textarea {
     border-top: 0;
@@ -189,33 +199,42 @@ footer {
     color: white;
 }
 
-footer .menu li {
-    height: 55px;
-    width: 55px;
+.top_footer {
+    background-color: #3a546d;
+}
+
+.top_footer .social {
+    margin: 0;
+    padding: 0;
+}
+
+.top_footer .social a {
+    font-size: 20px;
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
     border: 1px solid white;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
-footer .menu li a {
-    line-height: 55px;
+.top_footer .social a:hover {
+    color: #3a546d;
+    background-color: white;
+}
+
+.top_footer address,
+.top_footer .description {
     font-size: 20px;
 }
 
-.top_footer h3 {
-    font-weight: 500;
-}
-
-.top_footer p {
-    font-size: 20px;
-}
-
-.top_footer a {
+.top_footer .description a {
     color: #18bc9b;
 }
 
-.top_footer {
-    background-color: #3a546d;
+.top_footer .description a:hover {
+    color: white;
 }
 
 .bottom_footer {
